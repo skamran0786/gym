@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High Intensity Gym in Mumbra, Thane. Open 24/7 with elite equipment, expert coaching, and results-driven fitness programs. Start your 3-day free trial today!">
+    <meta name="keywords" content="Gym in Mumbra, Fitness Center Thane, High Intensity Gym, 24 Hour Gym Mumbra, Weight Loss Mumbra, Muscle Gain Thane">
+    <title>HIGH INTENSITY GYM - Open 24 Hours in Thane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-glow {
+            box-shadow: 0 0 20px #ef444499;
+            transition: all 0.3s ease;
+        }
+        .cta-glow:hover {
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.8);
+            transform: scale(1.05);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-2xl font-black text-red-600 uppercase tracking-tighter">HIGH<span class="text-white">INTENSITY</span></div>
+        
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-8 font-semibold text-sm">
+            <a href="#benefits" class="hover:text-red-500 transition">BENEFITS</a>
+            <a href="#trainers" class="hover:text-red-500 transition">TRAINERS</a>
+            <a href="#transformations" class="hover:text-red-500 transition">RESULTS</a>
+            <a href="#pricing" class="hover:text-red-500 transition">PRICING</a>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <a href="#signup" class="hidden sm:block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold text-sm transition">JOIN NOW</a>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle Menu">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-zinc-950 mobile-menu md:hidden overflow-y-auto">
+        <div class="flex flex-col h-full p-8 min-h-screen">
+            <div class="flex justify-between items-center mb-12">
+                <div class="text-2xl font-black text-red-600">HIGH<span class="text-white">INTENSITY</span></div>
+                <button id="menu-close" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <i data-lucide="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6 sm:space-y-8 text-2xl sm:text-3xl font-black">
+                <a href="#benefits" class="hover:text-red-600 transition">BENEFITS</a>
+                <a href="#trainers" class="hover:text-red-600 transition">TRAINERS</a>
+                <a href="#transformations" class="hover:text-red-600 transition">RESULTS</a>
+                <a href="#pricing" class="hover:text-red-600 transition">PRICING</a>
+                <a href="#signup" class="bg-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-center text-lg sm:text-xl transition">JOIN NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+                <div class="bg-red-600 px-3 py-1 font-bold text-xs sm:text-sm tracking-widest uppercase">
+                    OPEN 24 HOURS
+                </div>
+                <div class="bg-zinc-800 px-3 py-1 font-bold text-xs sm:text-sm flex items-center gap-1">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
+                    4.3 (496 REVIEWS)
+                </div>
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight md:leading-none">
+                HIGH INTENSITY <br>
+                <span class="text-red-600">THANE'S BEST GYM</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-zinc-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Experience the raw power of High Intensity Gym. Open 24/7 in Thane. Push your limits with elite equipment and expert coaching.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#signup" class="cta-glow bg-red-600 hover:bg-red-700 text-white px-6 py-4 md:px-10 md:py-5 rounded-lg font-black text-lg md:text-xl flex items-center justify-center gap-2 transition-transform active:scale-95">
+                    START 3-DAY TRIAL <i data-lucide="zap" class="fill-white"></i>
+                </a>
+                <a href="https://wa.me/918080805551" target="_blank" rel="noopener noreferrer" class="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-6 py-4 md:px-10 md:py-5 rounded-lg font-black text-lg md:text-xl transition flex items-center justify-center gap-2 active:scale-95">
+                    WHATSAPP US <i data-lucide="message-circle"></i>
+                </a>
+            </div>
+            <p class="mt-6 text-zinc-500 font-semibold italic text-sm">
+                * Results depend on individual effort and consistency.
+            </p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 sm:py-24 px-6 md:px-12 bg-zinc-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 md:mb-16" data-aos="fade-down">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4">WHY WE'RE NOT FOR EVERYONE</h2>
+                <p class="text-zinc-400 max-w-2xl mx-auto">We don't do "fitness talk." We do results. If you're looking for a spa, go elsewhere. If you're looking for a transformation, you're home.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-zinc-800 p-8 rounded-2xl border border-zinc-700" data-aos="fade-right" data-aos-delay="100">
+                    <div class="bg-red-600/10 p-4 rounded-xl inline-block mb-6">
+                        <i data-lucide="flame" class="text-red-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">FAT LOSS ON OVERDRIVE</h3>
+                    <p class="text-zinc-400">Our metabolic conditioning protocols will turn your body into a 24/7 fat-burning furnace. No endless cardio, just raw intensity.</p>
+                </div>
+                <div class="card-hover bg-zinc-800 p-8 rounded-2xl border border-zinc-700" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-red-600/10 p-4 rounded-xl inline-block mb-6">
+                        <i data-lucide="dumbbell" class="text-red-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">ELITE STRENGTH & MUSCLE</h3>
+                    <p class="text-zinc-400">Scientifically-backed hypertrophy and strength training. We don't just lift weights; we build machines.</p>
+                </div>
+                <div class="card-hover bg-zinc-800 p-8 rounded-2xl border border-zinc-700" data-aos="fade-left" data-aos-delay="300">
+                    <div class="bg-red-600/10 p-4 rounded-xl inline-block mb-6">
+                        <i data-lucide="shield-check" class="text-red-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">UNBREAKABLE CONFIDENCE</h3>
+                    <p class="text-zinc-400">The mental shift is just as powerful as the physical one. Walk taller, lead harder, and own every room you enter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations -->
+    <section id="transformations" class="py-16 sm:py-24 px-6 md:px-12 bg-black overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-12 md:mb-16 text-center" data-aos="zoom-in">THE PROOF IS IN THE RESULTS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="relative group" data-aos="fade-right">
+                    <div class="flex gap-2">
+                        <div class="w-1/2 overflow-hidden rounded-l-2xl border-2 border-zinc-800">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Before: Overweight male before starting fitness transformation at High Intensity Gym Mumbra" class="grayscale h-64 md:h-96 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <div class="absolute top-4 left-4 bg-black/70 px-4 py-1 font-bold text-xs uppercase">Before</div>
+                        </div>
+                        <div class="w-1/2 overflow-hidden rounded-r-2xl border-2 border-red-600">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2adfcd?q=80&w=2070&auto=format&fit=crop" alt="After: Fit male after 90 days at High Intensity Gym Mumbra" class="h-64 md:h-96 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <div class="absolute top-4 right-4 bg-red-600 px-4 py-1 font-bold text-xs uppercase">Day 90</div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-2xl font-bold">MARK R. - LOST 22LBS, GAINED 10LBS MUSCLE</h4>
+                        <p class="text-zinc-500 mt-2 italic">"I tried everything for years. High Intensity Gym was the only place that held me accountable. My life is completely different now."</p>
+                    </div>
+                </div>
+                <div class="relative group" data-aos="fade-left">
+                    <div class="flex gap-2">
+                        <div class="w-1/2 overflow-hidden rounded-l-2xl border-2 border-zinc-800">
+                            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=2070&auto=format&fit=crop" alt="Before: Female fitness journey start at High Intensity Gym Mumbra" class="grayscale h-64 md:h-96 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <div class="absolute top-4 left-4 bg-black/70 px-4 py-1 font-bold text-xs uppercase">Before</div>
+                        </div>
+                        <div class="w-1/2 overflow-hidden rounded-r-2xl border-2 border-red-600">
+                            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop" alt="After: Transformed female athlete at High Intensity Gym Mumbra" class="h-64 md:h-96 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <div class="absolute top-4 right-4 bg-red-600 px-4 py-1 font-bold text-xs uppercase">Day 90</div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-2xl font-bold">SARAH K. - RECLAIMED HER STRENGTH</h4>
+                        <p class="text-zinc-500 mt-2 italic">"The intensity is real, but so are the results. I'm stronger at 35 than I was at 20. Don't wait."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers -->
+    <section id="trainers" class="py-16 sm:py-24 px-6 md:px-12 bg-zinc-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-12 md:mb-16" data-aos="fade-down">MEET YOUR EXECUTIONERS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden rounded-2xl mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1974&auto=format&fit=crop" alt="Coach Jax" class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-left">
+                            <h4 class="text-3xl font-black uppercase">Coach Jax</h4>
+                            <p class="text-red-500 font-bold tracking-widest">STRENGTH & CONDITIONING</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400 px-4">Former Marine with 15+ years of making people unbreakable. He doesn't accept "I can't."</p>
+                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden rounded-2xl mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1974&auto=format&fit=crop" alt="Coach Mia" class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-left">
+                            <h4 class="text-3xl font-black uppercase">Coach Mia</h4>
+                            <p class="text-red-500 font-bold tracking-widest">FAT LOSS SPECIALIST</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400 px-4">Specializes in metabolic acceleration and functional power. Results-driven, no exceptions.</p>
+                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overflow-hidden rounded-2xl mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1583454155184-870a1f63aebc?q=80&w=1974&auto=format&fit=crop" alt="Coach Victor" class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-left">
+                            <h4 class="text-3xl font-black uppercase">Coach Victor</h4>
+                            <p class="text-red-500 font-bold tracking-widest">HYPERTROPHY EXPERT</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400 px-4">The master of muscle building. If you want to get big, Victor is the only one you talk to.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 sm:py-24 px-6 md:px-12 bg-red-600 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3" data-aos="fade-right">
+                    <h2 class="text-4xl sm:text-5xl font-black leading-tight">THEY DID IT. <br>WHY CAN'T YOU?</h2>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-black/20 p-8 rounded-2xl backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                        </div>
+                        <p class="text-lg italic mb-6">"Most gyms are social clubs. This is a battleground. I've never felt more alive or in better shape."</p>
+                        <div class="font-bold">- JAMES T., CEO</div>
+                    </div>
+                    <div class="bg-black/20 p-8 rounded-2xl backdrop-blur-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                            <i data-lucide="star" class="fill-current"></i>
+                        </div>
+                        <p class="text-lg italic mb-6">"Finally a place that doesn't sugarcoat fitness. It's hard work, but it works. Period."</p>
+                        <div class="font-bold">- ELENA M., LAWYER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 sm:py-24 px-6 md:px-12 bg-black overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-12 md:mb-16 uppercase" data-aos="fade-down">CHOOSE YOUR WEAPON</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 p-8 sm:p-10 rounded-3xl border border-zinc-800 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-2xl font-bold mb-4">BASIC TRAINING</h4>
+                    <div class="text-5xl font-black mb-6">₹999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Full Gym Access</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Locker & Shower Access</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Basic Workout Plan</li>
+                    </ul>
+                    <a href="#signup" class="w-full py-4 rounded-xl border-2 border-zinc-700 hover:bg-zinc-800 font-bold transition-all active:scale-95">JOIN NOW</a>
+                </div>
+                <div class="bg-zinc-800 p-8 sm:p-10 rounded-3xl border-2 border-red-600 flex flex-col h-full relative transform md:scale-105 z-10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 px-4 py-1 text-xs font-bold rounded-full uppercase tracking-widest">MOST POPULAR</div>
+                    <h4 class="text-2xl font-bold mb-4">INTENSITY PROTOCOL</h4>
+                    <div class="text-5xl font-black mb-6">₹1999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> 4 Group Sessions / Week</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Customized Nutrition Plan</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Monthly Bio-Scan</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> WhatsApp Support</li>
+                    </ul>
+                    <a href="#signup" class="w-full py-4 rounded-xl bg-red-600 hover:bg-red-700 font-black transition-all cta-glow active:scale-95">BOOK FREE TRIAL</a>
+                </div>
+                <div class="bg-zinc-900 p-8 sm:p-10 rounded-3xl border border-zinc-800 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-2xl font-bold mb-4">ELITE WARRIOR</h4>
+                    <div class="text-5xl font-black mb-6">₹2999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> 1-on-1 Personal Training</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Unlimited Bio-Scans</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Supplement Package</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Recovery Zone Access</li>
+                    </ul>
+                    <a href="#signup" class="w-full py-4 rounded-xl border-2 border-zinc-700 hover:bg-zinc-800 font-bold transition-all active:scale-95">INQUIRE NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 sm:py-24 px-6 md:px-12 bg-zinc-900 overflow-hidden">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-8 md:mb-12 text-center uppercase" data-aos="fade-down">QUESTIONS? ANSWERS.</h2>
+            <div class="space-y-6">
+                <div class="bg-zinc-800 p-6 rounded-2xl border border-zinc-700" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="text-xl font-bold mb-2">How long before I see results?</h5>
+                    <p class="text-zinc-400">If you follow the protocol 100%, you'll see visible changes in 21 days. In 90 days, you'll be a different person. Guaranteed.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-2xl border border-zinc-700" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="text-xl font-bold mb-2">I haven't worked out in years. Is this for me?</h5>
+                    <p class="text-zinc-400">We scale every movement. We don't care where you start, only that you don't quit. Beginners are welcome if they have the right attitude.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-2xl border border-zinc-700" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="text-xl font-bold mb-2">Do you provide a diet plan?</h5>
+                    <p class="text-zinc-400">Yes. Training is 30%, nutrition is 70%. We provide hard-hitting meal plans that actually taste good and fuel performance.</p>
+                </div>
+                <div class="bg-zinc-800 p-6 rounded-2xl border border-zinc-700" data-aos="fade-up" data-aos-delay="400">
+                    <h5 class="text-xl font-bold mb-2">How much time do I need?</h5>
+                    <p class="text-zinc-400">60 minutes. That's it. If you can't find 60 minutes to save your life, you have bigger problems than fitness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section id="signup" class="py-16 sm:py-24 px-6 md:px-12 bg-black border-t-4 border-red-600 overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight md:leading-none uppercase">START YOUR <br><span class="text-red-600">REVOLUTION</span></h2>
+                    <p class="text-lg sm:text-xl text-zinc-400 mb-8 leading-relaxed">Stop thinking. Start doing. Fill out the form and our head coach will call you within 24 hours to schedule your 3-day trial.</p>
+                    <div class="space-y-4 font-semibold">
+                        <div class="flex items-start gap-4 group">
+                            <i data-lucide="map-pin" class="text-red-600 mt-1 group-hover:scale-110 transition"></i>
+                            <span class="text-zinc-300">Oasis Tower, 1st Floor, A/B Wing, Prime Nest, Road, near Wafa Park, Kausa, Mumbra, East, Maharashtra 400612</span>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <i data-lucide="clock" class="text-red-600 group-hover:scale-110 transition"></i>
+                            <span class="text-zinc-300">OPEN 24 HOURS</span>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <i data-lucide="phone" class="text-red-600 group-hover:scale-110 transition"></i>
+                            <span class="text-zinc-300">080808 05551</span>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <i data-lucide="mail" class="text-red-600 group-hover:scale-110 transition"></i>
+                            <span class="text-zinc-300 uppercase">soptiontest604@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-zinc-900 p-8 sm:p-10 rounded-3xl border border-zinc-800 relative" data-aos="fade-left">
+                    <div id="form-success" class="hidden absolute inset-0 bg-zinc-900 rounded-3xl flex flex-col items-center justify-center text-center p-8 z-20">
+                        <div class="bg-green-500/10 p-6 rounded-full mb-6">
+                            <i data-lucide="check-circle" class="text-green-500 w-16 h-16"></i>
+                        </div>
+                        <h3 class="text-3xl font-black mb-4">MISSION RECEIVED</h3>
+                        <p class="text-zinc-400">Our Head Coach will contact you within 24 hours. Prepare yourself.</p>
+                    </div>
+                    <form id="signup-form" class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="956e082e-568b-424a-a8ad-ef20da4348c9">
+                        <input type="hidden" name="from_name" value="High Intensity Gym Lead">
+                        <input type="hidden" name="subject" value="New Lead from High Intensity Gym Website">
+                        
+                        <div>
+                            <label for="name" class="block text-sm font-bold mb-2 uppercase tracking-widest text-zinc-500">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 focus:outline-none focus:border-red-600 transition text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold mb-2 uppercase tracking-widest text-zinc-500">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 focus:outline-none focus:border-red-600 transition text-white">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-bold mb-2 uppercase tracking-widest text-zinc-500">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 80808 05551" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 focus:outline-none focus:border-red-600 transition text-white">
+                        </div>
+                        <div>
+                            <label for="goal" class="block text-sm font-bold mb-2 uppercase tracking-widest text-zinc-500">Goal</label>
+                            <select id="goal" name="goal" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 focus:outline-none focus:border-red-600 transition text-zinc-400">
+                                <option value="" disabled selected>Select Your Goal</option>
+                                <option>Fat Loss</option>
+                                <option>Muscle Gain</option>
+                                <option>Athletic Performance</option>
+                                <option>General Fitness</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-5 rounded-xl text-xl cta-glow transition-all active:scale-95 uppercase">CLAIM MY FREE 3-DAY TRIAL</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 sm:py-16 px-6 md:px-12 bg-zinc-950 border-t border-zinc-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center" data-aos="fade-up">
+                <div class="text-3xl font-black text-red-600 mb-6 text-center tracking-tighter uppercase">HIGH<span class="text-white">INTENSITY</span></div>
+                <div class="flex justify-center gap-8 mb-12">
+                    <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom" data-aos="fade-up">
+                <p class="font-semibold text-zinc-500">
+                    &copy; 2026 HIGH INTENSITY GYM. All Rights Reserved.
+                </p>
+                <p class="designer font-semibold text-zinc-500">
+                    Designed and developed by
+                    <a href="https://secureviewsolutions.in/" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-500 transition-colors">
+                        Secureview Solutions
+                    </a>
+                </p>
+            </div>
+
+            <style>
+                /* Responsive footer text sizing and layout */
+                .footer-bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid rgba(255, 255, 255, 0.12);
+                    padding: 16px 0;
+                    margin-top: 24px;
+                    gap: 1rem;
+                    flex-wrap: wrap; /* allow items to wrap on small screens */
+                }
+
+                /* Use clamp() so text scales smoothly between a min and max size */
+                .footer-bottom p {
+                    margin: 0;
+                    color: #ffffff;
+                    font-size: clamp(0.78rem, 1.2vw + 0.2rem, 1rem);
+                    line-height: 1.3;
+                }
+
+                /* Link styling */
+                .footer-bottom a {
+                    color: #ef4444e5;
+                    text-decoration: none;
+                }
+
+                /* Center items on narrow screens */
+                @media (max-width: 520px) {
+                    .footer-bottom {
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    .footer-bottom p {
+                        width: 100%;
+                    }
+                }
+            </style>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918080805551" class="fixed bottom-8 right-8 bg-green-500 p-4 rounded-full shadow-2xl hover:scale-110 transition z-50 group" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+        <span class="absolute right-full mr-4 bg-white text-black px-4 py-2 rounded-lg font-bold text-sm opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">CHAT WITH US</span>
+    </a>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Form Submission Logic
+        const signupForm = document.getElementById('signup-form');
+        const formSuccess = document.getElementById('form-success');
+
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const submitBtn = signupForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "SENDING...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(signupForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    formSuccess.classList.remove('hidden');
+                    signupForm.reset();
+                    // Re-initialize icons for the success message
+                    lucide.createIcons();
+                } else {
+                    console.log(response);
+                    alert(json.message);
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                alert("Something went wrong!");
+            })
+            .then(function() {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Smooth scroll for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
