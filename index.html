@@ -44,7 +44,7 @@
 
     <!-- Header -->
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800 py-4 px-6 md:px-12 flex justify-between items-center">
-        <div class="text-2xl font-black text-red-600 uppercase tracking-tighter">HIGH<span class="text-white">INTENSITY</span></div>
+        <div class="text-xl sm:text-2xl font-black text-red-600 uppercase tracking-tighter">HIGH<span class="text-white">INTENSITY</span></div>
         
         <!-- Desktop Nav -->
         <div class="hidden md:flex space-x-8 font-semibold text-sm">
@@ -65,8 +65,8 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-[60] bg-zinc-950 mobile-menu md:hidden overflow-y-auto">
-        <div class="flex flex-col h-full p-8 min-h-screen">
-            <div class="flex justify-between items-center mb-12">
+        <div class="flex flex-col h-full p-6 sm:p-8 min-h-screen">
+            <div class="flex justify-between items-center mb-10 sm:mb-12">
                 <div class="text-2xl font-black text-red-600">HIGH<span class="text-white">INTENSITY</span></div>
                 <button id="menu-close" class="text-white focus:outline-none" aria-label="Close Menu">
                     <i data-lucide="x" class="w-8 h-8"></i>
@@ -83,7 +83,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-20">
+    <section class="hero-bg min-h-screen min-h-[100svh] flex items-center justify-center text-center px-4 pt-20">
         <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
             <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
                 <div class="bg-red-600 px-3 py-1 font-bold text-xs sm:text-sm tracking-widest uppercase">
@@ -270,7 +270,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-zinc-900 p-8 sm:p-10 rounded-3xl border border-zinc-800 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
                     <h4 class="text-2xl font-bold mb-4">BASIC TRAINING</h4>
-                    <div class="text-5xl font-black mb-6">₹999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <div class="text-4xl sm:text-5xl font-black mb-6">₹999<span class="text-lg text-zinc-500">/mo</span></div>
                     <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Full Gym Access</li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Locker & Shower Access</li>
@@ -281,7 +281,7 @@
                 <div class="bg-zinc-800 p-8 sm:p-10 rounded-3xl border-2 border-red-600 flex flex-col h-full relative transform md:scale-105 z-10" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 px-4 py-1 text-xs font-bold rounded-full uppercase tracking-widest">MOST POPULAR</div>
                     <h4 class="text-2xl font-bold mb-4">INTENSITY PROTOCOL</h4>
-                    <div class="text-5xl font-black mb-6">₹1999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <div class="text-4xl sm:text-5xl font-black mb-6">₹1999<span class="text-lg text-zinc-500">/mo</span></div>
                     <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> 4 Group Sessions / Week</li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Customized Nutrition Plan</li>
@@ -292,7 +292,7 @@
                 </div>
                 <div class="bg-zinc-900 p-8 sm:p-10 rounded-3xl border border-zinc-800 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
                     <h4 class="text-2xl font-bold mb-4">ELITE WARRIOR</h4>
-                    <div class="text-5xl font-black mb-6">₹2999<span class="text-lg text-zinc-500">/mo</span></div>
+                    <div class="text-4xl sm:text-5xl font-black mb-6">₹2999<span class="text-lg text-zinc-500">/mo</span></div>
                     <ul class="text-zinc-400 space-y-4 mb-10 text-left flex-grow">
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> 1-on-1 Personal Training</li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500"></i> Unlimited Bio-Scans</li>
@@ -403,69 +403,30 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center" data-aos="fade-up">
                 <div class="text-3xl font-black text-red-600 mb-6 text-center tracking-tighter uppercase">HIGH<span class="text-white">INTENSITY</span></div>
-                <div class="flex justify-center gap-8 mb-12">
+                <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10 sm:mb-12">
                     <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="Instagram"><i data-lucide="instagram"></i></a>
                     <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="Facebook"><i data-lucide="facebook"></i></a>
                     <a href="#" class="text-zinc-500 hover:text-white transition-colors" aria-label="YouTube"><i data-lucide="youtube"></i></a>
                 </div>
             </div>
 
-            <div class="footer-bottom" data-aos="fade-up">
-                <p class="font-semibold text-zinc-500">
+            <div class="footer-bottom mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left" data-aos="fade-up">
+                <p class="font-semibold text-zinc-500 text-sm sm:text-base leading-snug">
                     &copy; 2026 HIGH INTENSITY GYM. All Rights Reserved.
                 </p>
-                <p class="designer font-semibold text-zinc-500">
+                <p class="designer font-semibold text-zinc-500 text-sm sm:text-base leading-snug">
                     Designed and developed by
                     <a href="https://secureviewsolutions.in/" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-500 transition-colors">
                         Secureview Solutions
                     </a>
                 </p>
             </div>
-
-            <style>
-                /* Responsive footer text sizing and layout */
-                .footer-bottom {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    border-top: 1px solid rgba(255, 255, 255, 0.12);
-                    padding: 16px 0;
-                    margin-top: 24px;
-                    gap: 1rem;
-                    flex-wrap: wrap; /* allow items to wrap on small screens */
-                }
-
-                /* Use clamp() so text scales smoothly between a min and max size */
-                .footer-bottom p {
-                    margin: 0;
-                    color: #ffffff;
-                    font-size: clamp(0.78rem, 1.2vw + 0.2rem, 1rem);
-                    line-height: 1.3;
-                }
-
-                /* Link styling */
-                .footer-bottom a {
-                    color: #ef4444e5;
-                    text-decoration: none;
-                }
-
-                /* Center items on narrow screens */
-                @media (max-width: 520px) {
-                    .footer-bottom {
-                        justify-content: center;
-                        text-align: center;
-                    }
-                    .footer-bottom p {
-                        width: 100%;
-                    }
-                }
-            </style>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918080805551" class="fixed bottom-8 right-8 bg-green-500 p-4 rounded-full shadow-2xl hover:scale-110 transition z-50 group" aria-label="Chat with us on WhatsApp">
-        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+    <a href="https://wa.me/918080805551" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 bg-green-500 p-3 sm:p-4 rounded-full shadow-2xl hover:scale-110 transition z-50 group" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" class="w-7 h-7 sm:w-8 sm:h-8 text-white"></i>
         <span class="absolute right-full mr-4 bg-white text-black px-4 py-2 rounded-lg font-bold text-sm opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">CHAT WITH US</span>
     </a>
 
